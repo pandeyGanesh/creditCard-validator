@@ -1,19 +1,18 @@
-#include <iostream>
-#include <vector>
+#include "headers.h"
 
 #define LIMIT 10
 
-using namespace std;
-
 class identityNode{
     private:
-        string companyName;
+        std::string companyName;
         identityNode *next[LIMIT];
     public:
-        identityNode(string compay="");
-        void insert(string company, string from, string to);
-        string search(string credit_card);
+        identityNode(std::string compay="");
+        void insert(std::string company, std::string from, std::string to);
+        std::string search(std::string credit_card);
         void display();
         bool isLeaf();
-        void display(string message);
+        void display(std::string message);
 };
+
+identityNode initializer();
