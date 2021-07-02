@@ -1,4 +1,4 @@
-#include "IIN.h"    // <iostream> <vector>
+#include "issuerName.h"    // <iostream> <vector>
 
 identityNode :: identityNode(std::string company){
     companyName = company;
