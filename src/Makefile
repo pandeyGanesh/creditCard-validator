@@ -11,6 +11,7 @@ _OBJ = issuerCategory.o issuerName.o utils.o driver.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 $(ODIR)/%.o: %.cpp $(DEPS)
+	mkdir -p $(ODIR)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 test: $(OBJ)
