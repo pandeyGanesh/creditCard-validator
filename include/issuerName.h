@@ -1,4 +1,5 @@
-#include "headers.h"
+#include <iostream>
+#include <vector>
 
 #define LIMIT 10
 
